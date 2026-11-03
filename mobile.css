@@ -1,0 +1,233 @@
+body{
+    width: 100%;
+    padding-right: 50px;
+    align-items: center;
+    align-content: center;
+    color: white;
+    background: var(--hero-gradient);
+}
+:root{
+    --primary-light: #4A4AFF;
+    --primary: #2D2DF8;
+    --primary-dark: #11145A;
+    --background-dark: #06081F;
+
+    --hero-gradient: radial-gradient(
+        circle,
+        var(--primary-light) 0%,
+        var(--primary) 25%,
+        var(--primary-dark) 60%,
+        var(--background-dark) 100%
+    );
+}
+header{
+    white-space: nowrap;
+}
+.head{
+    display: flex;
+    flex-direction: column;
+}
+.head img{
+    height: 300px;
+    width: 100%;
+}
+.containor-2{
+      grid-template-columns: 1fr 1fr;
+    
+}
+.first-card{
+    height: 25vh;
+    margin-bottom: 80px;
+}
+.first-card .f-card {
+    border-radius: 15px;
+    height: 50px;
+    width: 50px;
+    box-shadow: 3px 2px 5px 5px rgba(0, 0, 0, 0.253);
+    background-color: rgba(128, 128, 128, 0.075);
+}
+.background-load{
+    height: 40vh;
+    padding-top: 20px;
+    margin-bottom: 0;
+}
+.background-load button {
+    height: 50px;
+    width: 150px;
+    border: none;
+    border-radius: 14px;
+    background: var(--primary-dark);
+    color: white;
+    font-weight: bold;
+}
+.background-load p:nth-child(2){
+    font-size: 14px;
+    width: 25%;
+    margin-top: 10px;
+    color: rgba(0, 0, 255, 0.418);
+}
+.main-contact{
+    height: 20vh;
+    margin-bottom: 100px;
+}
+.container-1{
+    width: 80%;
+}
+.app-pags img{
+        height: 500px;
+        width: 200px;
+        margin: 20px;
+        border-radius: 18px;
+}
+footer{
+    gap: 5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 880px){
+    
+    .containor-2{
+       column-gap: 5px;
+    }
+    .containor-2 .box{
+    width: 300px;
+    border-radius: 12px;
+    background: white;
+    padding: 20px 0 20px 20px;
+    line-height: 1px;
+    }
+    .main-carts{
+         grid-template-columns: 1fr 1fr 1fr;
+    }
+    footer{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+    #menu-img{
+        display: block;
+    }
+    header nav ul{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 650px) {
+    body{
+    width: 100%;
+    padding-right: 50px;
+    align-items: center;
+    align-content: center;
+    color: white;
+    background: var(--hero-gradient);
+}
+:root{
+    --primary-light: #4A4AFF;
+    --primary: #2D2DF8;
+    --primary-dark: #11145A;
+    --background-dark: #06081F;
+
+    --hero-gradient: radial-gradient(
+        circle,
+        var(--primary-light) 0%,
+        var(--primary) 25%,
+        var(--primary-dark) 60%,
+        var(--background-dark) 100%
+    );
+}
+.containor-2{
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6,1fr);
+}
+.head{
+    display: flex;
+    flex-direction: column;
+}
+.head img{
+    height: 300px;
+    width: 100%;
+}
+.new-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+}
+.first-card{
+    height: 40vh;
+}
+.first-card .f-card {
+    border-radius: 15px;
+    height: 50px;
+    width: 50px;
+    box-shadow: 3px 2px 5px 5px rgba(0, 0, 0, 0.253);
+    background-color: rgba(128, 128, 128, 0.075);
+}
+.background-load{
+    height: 45vh;
+}
+.background-load button {
+    height: 50px;
+    width :  20vw;
+    border: none;
+    border-radius: 14px;
+    background: var(--primary-dark);
+    color: white;
+    font-weight: bold;
+}
+.background-load p:nth-child(2){
+    font-size: 14px;
+    width: 25%;
+    margin-top: 10px;
+    color: rgba(0, 0, 255, 0.418);
+}
+.main-carts{
+    grid-template-columns: repeat(2, 1fr);
+     grid-template-rows: repeat(4,1fr);
+}
+.main-heading p:first-child{
+   font-size: 30px;
+   min-width: 100px;
+   height: 70px;
+}
+.cont2-1 a{
+    font-size: 20px;
+    align-items: center;
+}
+ .main-carts .cart-2{
+    height: 350px;
+    width: 100%;
+}
+.app-pags img{
+        height: 500px;
+        width: 200px;
+        margin: 20px;
+        border-radius: 18px;
+}
+.main-contact{
+    height: 45vh;
+}
+
+}
